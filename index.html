@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlChat | Soluções em Comunicação via API Oficial Meta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --secondary: #0ea5e9;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-light: #f8fafc;
+            --text-gray: #94a3b8;
+            --accent: #22c55e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--bg-dark); color: var(--text-light); line-height: 1.6; scroll-behavior: smooth; }
+        
+        header {
+            background: radial-gradient(circle at top center, #1e3a8a 0%, #0f172a 70%);
+            padding: 100px 20px 80px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .badge {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--secondary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        header h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        header p {
+            max-width: 750px;
+            margin: 0 auto 40px;
+            font-size: 1.2rem;
+            color: var(--text-gray);
+        }
+        
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.3);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #2563eb; transform: translateY(-2px); }
+
+        section { max-width: 1200px; margin: auto; padding: 80px 20px; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .icon { font-size: 2rem; margin-bottom: 15px; display: block; }
+        .card h3 { margin-bottom: 10px; color: white; }
+        .card p { color: var(--text-gray); font-size: 0.95rem; }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-radius: 24px;
+            padding: 60px 20px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Footer Estilizado */
+        footer {
+            padding: 60px 20px;
+            background: #020617;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .footer-info { margin-bottom: 30px; line-height: 1.8; color: var(--text-gray); }
+        .footer-info strong { color: white; display: block; margin-bottom: 5px; }
+        
+        .footer-links {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+        }
+        .footer-links a {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer-links a:hover { text-decoration: underline; }
+
+        .legal-disclaimer {
+            font-size: 0.75rem;
+            opacity: 0.5;
+            color: var(--text-gray);
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <span class="badge">🛡️ Tecnologia API Oficial Cloud Meta</span>
+    <h1>Escalabilidade e Segurança Total para seu WhatsApp.</h1>
+    <p>
+        Conecte sua empresa à API Oficial do WhatsApp. Atendimento multiusuário, automação inteligente e a tranquilidade de estar 100% em conformidade com as normas da Meta.
+    </p>
+    <a class="btn" href="https://wa.me/5541999217773" target="_blank">
+        Agendar Demonstração Técnica
+    </a>
+</header>
+
+<section id="recursos">
+    <div class="section-title">
+        <h2>Por que escolher o AlChat?</h2>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <span class="icon">✅</span>
+            <h3>Risco Zero de Banimento</h3>
+            <p>Utilizamos a infraestrutura oficial da Meta. Seu número seguro e operando dentro de todas as políticas de uso.</p>
+        </div>
+        <div class="card">
+            <span class="icon">☁️</span>
+            <h3>Operação 100% em Nuvem</h3>
+            <p>Seu sistema de atendimento não depende de celulares ligados à rede. Estabilidade garantida 24 horas por dia.</p>
+        </div>
+        <div class="card">
+            <span class="icon">📈</span>
+            <h3>Comunicação em Escala</h3>
+            <p>Envie notificações e campanhas para toda sua base de clientes sem os limites das listas de transmissão comuns.</p>
+        </div>
+        <div class="card">
+            <span class="icon">👥</span>
+            <h3>Multi-Agentes Profissional</h3>
+            <p>Um único número para toda sua equipe. Monitore a performance e o tempo de resposta em tempo real.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="cta-box">
+        <h2>Sua empresa merece atendimento profissional.</h2>
+        <p style="margin-bottom: 30px; color: var(--text-gray); max-width: 600px; margin-left: auto; margin-right: auto;">
+            Migre para a API Oficial e transforme o seu WhatsApp em um canal de vendas robusto, organizado e auditável.
+        </p>
+        <a class="btn" href="https://wa.me/5541999217773" target="_blank">
+            Falar com um Especialista
+        </a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <strong>52.753.253 ALCIDES CURSINO DE SIQUEIRA NETO</strong>
+            <p>CNPJ: 52.753.253/0001-30</p>
+            <p>Rua Batista da Costa, 690 - Xaxim</p>
+            <p>Curitiba - PR | CEP: 81810-190</p>
+        </div>
+
+        <nav class="footer-links">
+            <a href="politica-de-privacidade">Política de Privacidade</a>
+            <a href="termos-de-uso">Termos de Uso</a>
+        </nav>
+
+        <div class="legal-disclaimer">
+            <p>© 2026 AlChat. Todos os direitos reservados.</p>
+            <p style="margin-top: 10px;">O AlChat utiliza a infraestrutura Cloud API da Meta para fornecer soluções de comunicação seguras e estáveis. Não possuímos vínculo societário direto com a Meta Platforms, Inc.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
