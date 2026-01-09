@@ -1,17 +1,13 @@
 FROM nginx:alpine
 
-# Copia todos os seus arquivos HTML (index, politica, termos)
-COPY *.html /usr/share/nginx/html/
+# Remove a configuração padrão do nginx
+RUN rm /etc/nginx/conf.d/default.conf
 
-# Configura o Nginx para resolver URLs sem .html
-RUN echo 'server { \
-    listen 80; \
-    root /usr/share/nginx/html; \
-    index index.html; \
-    location / { \
-        try_files $uri $uri.html $uri/ =404; \
-    } \
-}' > /etc/nginx/conf.d/default.conf
+# Copia nossa configuração
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Copia todos os arquivos do site para o nginx
+COPY . /usr/share/nginx/html
+
+# Porta padrão
+EXPOSE 8181
